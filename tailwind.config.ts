@@ -18,6 +18,9 @@ const config = {
       },
     },
     extend: {
+      fontFamily: {
+        overused: ["Overused Grotesk", "sans-serif"],
+      },
       colors: {
         emerald: "#059669",
         textgray: "#6B7280",
@@ -76,7 +79,7 @@ const config = {
       },
     },
   },
-  plugins: [require("tailwindcss-animate")],
+  plugins: [require("tailwindcss-animate"), require("daisyui")],
 } satisfies Config;
 
 export default config;

@@ -1,25 +1,61 @@
 import React from "react";
 import Image from "next/image";
 import Link from "next/link";
-import { Button } from "@/components/ui/button";
 import { buttonVariants } from "@/components/ui/button";
 
 type Props = {};
 
 const Header = (props: Props) => {
   return (
-    <nav className="flex flex-row items-center justify-between pl-[178px] pr-[178px] border-b-[1px] h-[44px]">
-      <a href="/">
-        <Image src="/lulo.png" alt="Lulo Logo" width={50} height={10} />
-      </a>
-      <div className="text-textgray flex flex-row items-center gap-4">
-        <a href="/">Product</a>
-        <a href="/">How it Works</a>
-        <a href="/">FAQs</a>
+    <nav className="flex flex-row items-center justify-between px-4 md:px-[178px] border-b-[1px] h-[44px]">
+      <div className="flex flex-row items-center justify-between gap-1">
+        <div className="drawer md:hidden">
+          <input id="my-drawer" type="checkbox" className="drawer-toggle" />
+          <div className="drawer-content">
+            <label htmlFor="my-drawer" className="hover:cursor-pointer drawer-button">
+              ≡
+            </label>
+          </div>
+          <div className="drawer-side">
+            <label
+              htmlFor="my-drawer"
+              aria-label="close sidebar"
+              className="drawer-overlay"
+            ></label>
+            <ul className="menu p-4 w-80 min-h-full text-base-content bg-[#065F46]">
+              <li>
+                <a href="/">Product</a>
+              </li>
+              <li>
+                <a href="/">How it Works</a>
+              </li>
+              <li>
+                <a href="/">FAQs</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <a href="/" className="-m-4 md:-m-0">
+          <Image src="/lulo.png" alt="Lulo Logo" width={70} height={14} />
+        </a>
+      </div>
+
+      <div className="text-textgray hidden md:flex flex-row items-center gap-8">
+        <a href="/" className="hover:text-emerald">
+          Product
+        </a>
+        <a href="/" className="hover:text-emerald">
+          How it Works
+        </a>
+        <a href="/" className="hover:text-emerald">
+          FAQs
+        </a>
       </div>
       <Link
         href="/"
-        className={`${buttonVariants({ variant: "outline" })} bg-emerald text-white h-[32px]`}
+        className={`${buttonVariants({
+          variant: "outline",
+        })} bg-emerald text-white h-[32px] hover:bg-white hover:text-emerald`}
       >
         Get Started
       </Link>
