@@ -16,3 +16,12 @@
   font-weight: bold;
   font-style: normal;
 }
+
+@font-face {
+  font-family: "Overused Grotesk";
+  src: url("/fonts/OverusedGrotesk-SemiBold.woff2") format("woff2"),
+    url("/fonts/OverusedGrotesk-SemiBold.woff") format("woff"),
+    url("/fonts/OverusedGrotesk-SemiBold.ttf") format("truetype");
+  font-weight: semibold;
+  font-style: normal;
+}
