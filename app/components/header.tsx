@@ -24,38 +24,44 @@ const Header = (props: Props) => {
             ></label>
             <ul className="menu p-4 w-80 min-h-full text-base-content bg-[#065F46]">
               <li>
-                <a href="/">Product</a>
+                <Link href="/">Product</Link>
               </li>
               <li>
-                <a href="/">How it Works</a>
+                <Link href="/">How it Works</Link>
               </li>
               <li>
-                <a href="/">FAQs</a>
+                <Link href="/">FAQs</Link>
               </li>
             </ul>
           </div>
         </div>
-        <a href="/" className="-m-4 md:-m-0">
-          <Image src="/lulo.png" alt="Lulo Logo" width={70} height={14} />
-        </a>
+        <Link href="/" className="-m-4 md:-m-0">
+          <Image
+            src="/lulo.png"
+            alt="Lulo Logo"
+            width={70}
+            height={14}
+            className="hover:sepia drop-shadow-2xl"
+          />
+        </Link>
       </div>
 
       <div className="text-textgray hidden md:flex flex-row items-center gap-8">
-        <a href="/" className="hover:text-emerald">
+        <Link href="/" className="hover:text-emerald">
           Product
-        </a>
-        <a href="/" className="hover:text-emerald">
+        </Link>
+        <Link href="/" className="hover:text-emerald">
           How it Works
-        </a>
-        <a href="/" className="hover:text-emerald">
+        </Link>
+        <Link href="/" className="hover:text-emerald">
           FAQs
-        </a>
+        </Link>
       </div>
       <Link
         href="/"
         className={`${buttonVariants({
           variant: "outline",
-        })} bg-emerald text-white h-[32px] hover:bg-white hover:text-emerald`}
+        })} bg-emerald text-white h-[32px] hover:bg-white hover:text-emerald hover:animate-pulse`}
       >
         Get Started
       </Link>

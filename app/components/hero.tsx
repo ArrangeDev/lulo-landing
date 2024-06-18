@@ -4,6 +4,9 @@ import Link from "next/link";
 import React from "react";
 import AvatarCircles from "@/components/magicui/avatar-circles";
 import Image from "next/image";
+import WordFadeIn from "@/components/magicui/word-fade-in";
+import { motion } from "framer-motion";
+import { LinkPreview } from "@/components/ui/link-preview";
 
 type Props = {};
 
@@ -17,28 +20,31 @@ const Hero = (props: Props) => {
   return (
     <div className="flex flex-col items-center">
       <div className="flex flex-col items-center justify-start gap-4 px-12">
-        <p className="font-overused font-medium text-center md:text-6xl text-4xl md:px-20">
-          Your new DeFi <br />
-          Savings Account
-        </p>
-        <p className="text-[#6B7280] md:text-xl text-lg font-overused text-center md:px-24 hidden md:block">
+        <WordFadeIn
+          className="font-overused font-medium text-center md:text-6xl text-4xl md:px-20"
+          words="Your new DeFi Savings Account"
+        />
+
+        <p className="text-textgray md:text-xl text-lg font-overused text-center md:px-24 hidden md:block">
           Lulo is the new way of earning interest from <br /> multiple providers automatically.
         </p>
-        <p className="text-[#6B7280] md:text-xl text-lg font-overused text-center md:px-24 md:hidden">
+        <p className="text-textgray md:text-xl text-lg font-overused text-center md:px-24 md:hidden">
           Lulo is the new way of earning interest from multiple providers automatically.
         </p>
         <div className="flex md:flex-row flex-col items-center justify-between md:gap-6 md:pt-2">
-          <Link
-            href="/"
-            className={`${buttonVariants({
-              variant: "outline",
-            })} bg-emerald text-white h-[44px] w-[160px] hover:bg-white hover:text-emerald`}
-          >
-            Get Started
-          </Link>
+          <LinkPreview url="https://lulo.fi">
+            <Link
+              href="/"
+              className={`${buttonVariants({
+                variant: "outline",
+              })} bg-emerald text-white h-[44px] w-[160px] hover:bg-white hover:text-emerald hover:animate-pulse hover:cursor-alias`}
+            >
+              Get Started
+            </Link>
+          </LinkPreview>
           <div className="flex flex-row items-center justify-between gap-4 pt-4 md:pt-0">
             <AvatarCircles avatarUrls={avatarUrls} />
-            <p className="text-[#6B7280]">Join 2,349 others</p>
+            <p className="text-textgray">Join 2,349 others</p>
           </div>
         </div>
       </div>
@@ -47,7 +53,7 @@ const Hero = (props: Props) => {
         alt="Lulo Land"
         width={1300}
         height={325}
-        className="pt-9 px-6 hidden md:block"
+        className="pt-9 px-6 hidden md:block -mb-96"
         quality={100}
       />
       <Image
@@ -55,7 +61,7 @@ const Hero = (props: Props) => {
         alt="Lulo Land"
         width={1300}
         height={325}
-        className="pt-5 pl-2 md:hidden"
+        className="pt-5 pl-2 md:hidden -mb-24"
         quality={100}
       />
     </div>

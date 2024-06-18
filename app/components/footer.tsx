@@ -1,6 +1,7 @@
 import React from "react";
 import { Separator } from "@/components/ui/separator";
 import Image from "next/image";
+import Link from "next/link";
 import { IconBrandFacebook } from "@tabler/icons-react";
 import { IconBrandTwitter } from "@tabler/icons-react";
 import { IconBrandInstagram } from "@tabler/icons-react";
@@ -21,48 +22,48 @@ const Footer = (props: Props) => {
             maximise <br /> your DeFi yields.
           </p>
           <div className="flex flex-row gap-5">
-            <a href="/">
+            <Link href="/">
               <IconBrandFacebook stroke={2} className="text-[#6B7280]" />
-            </a>
-            <a href="/">
+            </Link>
+            <Link href="/">
               <IconBrandTwitter stroke={2} className="text-[#6B7280]" />
-            </a>
-            <a href="/">
+            </Link>
+            <Link href="/">
               <IconBrandInstagram stroke={2} className="text-[#6B7280]" />
-            </a>
-            <a href="/">
+            </Link>
+            <Link href="/">
               <IconBrandLinkedin stroke={2} className="text-[#6B7280]" />
-            </a>
-            <a href="/">
+            </Link>
+            <Link href="/">
               <IconBrandYoutube stroke={2} className="text-[#6B7280]" />
-            </a>
-            <a href="/">
+            </Link>
+            <Link href="/">
               <IconBrandSpotify stroke={2} className="text-[#6B7280]" />
-            </a>
+            </Link>
           </div>
         </div>
         <div className="md:flex md:flex-row grid grid-cols-2 md:justify-center md:gap-20">
           <div className="flex flex-col gap-2 text-[#6B7280]">
             <p className="font-bold pb-3 text-[#111827]">Get Started</p>
-            <a href="/">Documentation</a>
-            <a href="/">Rewards</a>
-            <a href="/">Portfolio</a>
-            <a href="/">Login</a>
+            <Link href="/">Documentation</Link>
+            <Link href="/">Rewards</Link>
+            <Link href="/">Portfolio</Link>
+            <Link href="/">Login</Link>
           </div>
           <div className="flex flex-col gap-2 text-[#6B7280]">
             <p className="font-bold pb-3 text-[#111827]">Solutions</p>
-            <a href="/">About</a>
-            <a href="/">Privacy Policy</a>
-            <a href="/">Terms & Conditions</a>
-            <a href="/">Disclaimer</a>
+            <Link href="/">About</Link>
+            <Link href="/">Privacy Policy</Link>
+            <Link href="/">Terms & Conditions</Link>
+            <Link href="/">Disclaimer</Link>
           </div>
           <div className="flex flex-col gap-2 text-[#6B7280] pt-6 md:pt-0">
             <p className="font-bold pb-3 text-[#111827]">Resources</p>
-            <a href="/">Blog</a>
-            <a href="/">Docs</a>
-            <a href="/">
+            <Link href="/">Blog</Link>
+            <Link href="/">Docs</Link>
+            <Link href="/">
               Product Adoption <br /> School
-            </a>
+            </Link>
           </div>
         </div>
       </div>
