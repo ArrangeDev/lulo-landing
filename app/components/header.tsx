@@ -46,7 +46,7 @@ const Header = (props: Props) => {
         </Link>
       </div>
 
-      <div className="text-textgray hidden md:flex flex-row items-center gap-8">
+      <div className="text-textgray hidden md:flex flex-row items-center gap-8 shrink">
         <Link href="/" className="hover:text-emerald">
           Product
         </Link>

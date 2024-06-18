@@ -4,6 +4,12 @@ import Contractbutton from "./contractbutton";
 import FlipText from "@/components/magicui/flip-text";
 import Link from "next/link";
 import Image from "next/image";
+import Timeline from "@mui/lab/Timeline";
+import TimelineItem, { timelineItemClasses } from "@mui/lab/TimelineItem";
+import TimelineSeparator from "@mui/lab/TimelineSeparator";
+import TimelineConnector from "@mui/lab/TimelineConnector";
+import TimelineContent from "@mui/lab/TimelineContent";
+import TimelineDot from "@mui/lab/TimelineDot";
 
 type Props = {};
 
@@ -55,83 +61,56 @@ const Manage = (props: Props) => {
           className="pr-[40px]"
         />
         <div className="flex flex-col gap-4">
-          <h2 className="font-overused pt-5 text-5xl md:pr-16">
+          <h2 className="font-overused pt-5 md:text-5xl text-4xl md:pr-8">
             The one place to manage your DeFi
           </h2>
           <p className="font-overused text-textgray md:pr-36 pr-4 md:text-lg text-xl">
             Lulo is the new way of earning interest from multiple providers automatically.
           </p>
-          <ul className="timeline timeline-vertical md:-ml-[575px] -ml-80 ">
-            <li>
-              <div className="timeline-end timeline-box bg-transparent border-none box-shadow-">
+          <Timeline
+            sx={{
+              [`& .${timelineItemClasses.root}:before`]: {
+                flex: 0,
+                padding: 0,
+              },
+            }}
+          >
+            <TimelineItem>
+              <TimelineSeparator>
+                <TimelineDot className="bg-emerald" />
+                <TimelineConnector />
+              </TimelineSeparator>
+              <TimelineContent className="text-lg">
                 <p className="font-medium">Connect your wallet</p>
-                <p className="text-textgray">Or use your wallet to get started</p>
-              </div>
-              <div className="timeline-middle">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  viewBox="0 0 20 20"
-                  fill="currentColor"
-                  className="w-5 h-5"
-                >
-                  <path
-                    fillRule="evenodd"
-                    d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.857-9.809a.75.75 0 00-1.214-.882l-3.483 4.79-1.88-1.88a.75.75 0 10-1.06 1.061l2.5 2.5a.75.75 0 001.137-.089l4-5.5z"
-                    clipRule="evenodd"
-                  />
-                </svg>
-              </div>
-              <hr className="bg-emerald" />
-            </li>
-            <li>
-              <hr className="bg-emerald" />
-              <div className="timeline-end timeline-box bg-transparent border-none">
+                <p className="text-textgray">Or use your email to get started</p>
+              </TimelineContent>
+            </TimelineItem>
+            <TimelineItem>
+              <TimelineSeparator>
+                <TimelineDot className="bg-emerald" />
+                <TimelineConnector />
+              </TimelineSeparator>
+              <TimelineContent className="text-lg">
                 <p className="font-medium">Create a deposit</p>
                 <p className="text-textgray">Start with as little as $100</p>
-              </div>
-              <div className="timeline-middle">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  viewBox="0 0 20 20"
-                  fill="currentColor"
-                  className="w-5 h-5"
-                >
-                  <path
-                    fillRule="evenodd"
-                    d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.857-9.809a.75.75 0 00-1.214-.882l-3.483 4.79-1.88-1.88a.75.75 0 10-1.06 1.061l2.5 2.5a.75.75 0 001.137-.089l4-5.5z"
-                    clipRule="evenodd"
-                  />
-                </svg>
-              </div>
-              <hr className="bg-emerald" />
-            </li>
-            <li>
-              <hr className="bg-emerald" />
-              <div className="timeline-end timeline-box bg-transparent border-none">
+              </TimelineContent>
+            </TimelineItem>
+            <TimelineItem>
+              <TimelineSeparator>
+                <TimelineDot className="bg-emerald" />
+              </TimelineSeparator>
+              <TimelineContent className="text-lg">
                 <p className="font-medium">Relax & Earn</p>
                 <p className="text-textgray hidden md:block">
-                  We&apos;ll automatically invest your money <br /> in various DeFi pools with this
+                  We&apos;ll automatically invest your money in
+                  <br /> various DeFi pools with this
                 </p>
                 <p className="text-textgray md:hidden">
                   We&apos;ll automatically invest your money in various DeFi pools with this
                 </p>
-              </div>
-              <div className="timeline-middle">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  viewBox="0 0 20 20"
-                  fill="currentColor"
-                  className="w-5 h-5"
-                >
-                  <path
-                    fillRule="evenodd"
-                    d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.857-9.809a.75.75 0 00-1.214-.882l-3.483 4.79-1.88-1.88a.75.75 0 10-1.06 1.061l2.5 2.5a.75.75 0 001.137-.089l4-5.5z"
-                    clipRule="evenodd"
-                  />
-                </svg>
-              </div>
-            </li>
-          </ul>
+              </TimelineContent>
+            </TimelineItem>
+          </Timeline>
         </div>
       </div>
     </div>
