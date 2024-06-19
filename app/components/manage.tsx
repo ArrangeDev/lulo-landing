@@ -16,7 +16,7 @@ type Props = {};
 const Manage = (props: Props) => {
   return (
     <div className="bg-white w-full min-h-screen flex flex-col items-center justify-start md:px-60 px-5">
-      <div className="flex md:flex-row flex-col justify-between w-full pb-12 pt-8">
+      <div className="flex md:flex-row flex-col justify-between w-full pb-12 pt-8 gap-4">
         <div className="flex md:flex-col flex-row items-start justify-between md:gap-2 gap-4">
           <p className="text-textgray md:text-xl hidden md:block">
             It&apos;s better than your bank!
@@ -36,17 +36,17 @@ const Manage = (props: Props) => {
             />
           </Link>
         </div>
-        <div className="flex flex-row items-center justify-around md:gap-12 gap-8 font-overused pt-8 md:pt-0 text-textgray">
+        <div className="flex flex-row items-center justify-around md:gap-8 gap-8 font-overused pt-8 md:pt-0 text-textgray">
           <div className="">
-            <FlipText className="md:text-6xl text-4xl text-emerald" word="12.3%" />
+            <FlipText className="md:text-5xl shrink text-4xl text-emerald" word="12.3%" />
             <p>Average APY</p>
           </div>
           <div>
-            <FlipText className="md:text-6xl text-4xl text-emerald" word="2x" />
+            <FlipText className="md:text-5xl shrink text-4xl text-emerald" word="2x" />
             <p>Earnings</p>
           </div>
           <div>
-            <FlipText className="md:text-6xl text-4xl text-emerald" word="$191M" />
+            <FlipText className="md:text-5xl shrink text-4xl text-emerald" word="$191M" />
             <p>Total Earnings</p>
           </div>
         </div>

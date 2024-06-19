@@ -1,3 +1,8 @@
 .bg-split {
   background: linear-gradient(to bottom, #065f46 33%, #faf4ea 33%);
 }
+
+.bg-grid {
+  background-image: linear-gradient(to right, #059669 1px, transparent 1px),
+    linear-gradient(to bottom, #059669 1px, transparent 1px);
+}

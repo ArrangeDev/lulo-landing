@@ -27,6 +27,7 @@ const Goodbye = (props: Props) => {
         width={624}
         height={466}
         className="hidden md:block"
+        quality={100}
       />
       <Image
         src="https://github.com/ArrangeDev/lulo-landing/assets/93305952/07a698e9-c299-4599-ae88-8edd03b34ff3"
@@ -34,6 +35,7 @@ const Goodbye = (props: Props) => {
         width={382}
         height={548}
         className="md:hidden"
+        quality={100}
       />
     </div>
   );

@@ -1,3 +1,4 @@
+"use client";
 import { Separator } from "@/components/ui/separator";
 import React from "react";
 import {
@@ -17,7 +18,7 @@ const Faqs = (props: Props) => {
     <div className="flex flex-col items-center justify-around w-full gap-6 pb-12">
       <Separator />
       <h1 className="text-overused font-medium text-3xl">Frequently Asked</h1>
-      <div className="pb-2">
+      <div className="pb-2 w-full md:w-[650px]">
         <Accordion type="single" collapsible className="w-full">
           <AccordionItem value="item-1">
             <AccordionTrigger>How much money do I need to start?</AccordionTrigger>
@@ -51,20 +52,26 @@ const Faqs = (props: Props) => {
           </AccordionItem>
         </Accordion>
       </div>
-      <div className="bg-emerald text-white rounded-xl p-4 flex flex-col items-center justify-center gap-4 ">
-        <h1 className="font-overused text-4xl pt-8">Get Started Now</h1>
-        <p className="text-sm px-16">
+      <div className="bg-[#0C4434] relative overflow-hidden mx-2 text-white rounded-xl p-4 flex flex-col items-center justify-center gap-4 md:w-[884px]">
+        <h1 className="pointer-events-none font-overused text-4xl pt-16 z-10">Get Started Now</h1>
+        <p className="text-sm px-16 z-10 hidden md:block">
           Lulo helps you automate the painful process of manually <br /> switching providers to
           maximise your DeFi yields.
         </p>
-        <Link
-          href="/"
-          className={`${buttonVariants({
-            variant: "outline",
-          })} bg-white text-emerald h-[32px] hover:bg-emerald hover:text-white hover:animate-pulse`}
-        >
-          Get Started
-        </Link>
+        <p className="text-sm px-16 z-10 md:hidden">
+          Lulo helps you automate the painful process of manually switching providers to maximise
+          your DeFi yields.
+        </p>
+        <div className="pb-8 z-10">
+          <Link
+            href="/"
+            className={`${buttonVariants({
+              variant: "outline",
+            })} bg-white text-emerald h-[32px] hover:bg-emerald hover:text-white hover:animate-pulse`}
+          >
+            Get Started
+          </Link>
+        </div>
         <RetroGrid />
       </div>
     </div>
