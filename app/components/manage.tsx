@@ -15,7 +15,7 @@ type Props = {};
 
 const Manage = (props: Props) => {
   return (
-    <div className="bg-white w-full min-h-screen flex flex-col items-center justify-start md:px-60 px-6">
+    <div className="bg-white w-full min-h-screen flex flex-col items-center justify-start md:px-60 px-5">
       <div className="flex md:flex-row flex-col justify-between w-full pb-12 pt-8">
         <div className="flex md:flex-col flex-row items-start justify-between md:gap-2 gap-4">
           <p className="text-textgray md:text-xl hidden md:block">
@@ -61,9 +61,7 @@ const Manage = (props: Props) => {
           className="pr-[40px]"
         />
         <div className="flex flex-col gap-4">
-          <h2 className="font-overused pt-5 md:text-5xl text-4xl md:pr-8">
-            The one place to manage your DeFi
-          </h2>
+          <h2 className="font-overused pt-5 text-5xl md:pr-8">The one place to manage your DeFi</h2>
           <p className="font-overused text-textgray md:pr-36 pr-4 md:text-lg text-xl">
             Lulo is the new way of earning interest from multiple providers automatically.
           </p>

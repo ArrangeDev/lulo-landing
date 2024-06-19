@@ -61,7 +61,7 @@ const Hero = (props: Props) => {
         alt="Lulo Land"
         width={1300}
         height={325}
-        className="pt-5 pl-2 md:hidden -mb-24"
+        className="pt-3 pl-2 md:hidden -mb-24"
         quality={100}
       />
     </div>

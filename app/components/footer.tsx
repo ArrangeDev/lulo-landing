@@ -12,7 +12,7 @@ type Props = {};
 
 const Footer = (props: Props) => {
   return (
-    <footer className="bg-white flex flex-col justify-start gap-4 md:px-40 px-8 pt-16 pb-16">
+    <footer className="bg-white flex flex-col justify-start gap-4 md:px-40 px-8 pt-12 pb-16">
       <Separator />
       <div className="flex md:flex-row flex-col justify-center items-center gap-12 md:gap-32 pt-4">
         <div className="flex flex-col gap-3">

@@ -2,6 +2,8 @@ import Image from "next/image";
 import Hero from "./components/hero";
 import Manage from "./components/manage";
 import Wall from "./components/wall";
+import Goodbye from "./components/goodbye";
+import Faqs from "./components/faqs";
 
 export default function Home() {
   return (
@@ -9,6 +11,8 @@ export default function Home() {
       <Hero />
       <Manage />
       <Wall />
+      <Goodbye />
+      <Faqs />
     </main>
   );
 }
