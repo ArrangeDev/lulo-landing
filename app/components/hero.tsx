@@ -18,7 +18,7 @@ const avatarUrls = [
 
 const Hero = (props: Props) => {
   return (
-    <div className="flex flex-col items-center">
+    <div className="flex flex-col items-center ">
       <div className="flex flex-col items-center justify-start gap-4 px-12">
         <WordFadeIn
           className="font-overused font-medium text-center md:text-6xl text-4xl md:px-20"
@@ -53,7 +53,7 @@ const Hero = (props: Props) => {
         alt="Lulo Land"
         width={1300}
         height={325}
-        className="pt-9 px-6 hidden md:block -mb-96"
+        className="pt-9 px-6 hidden md:block -mb-96 "
         quality={100}
       />
       <Image

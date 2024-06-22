@@ -15,9 +15,9 @@ type Props = {};
 
 const Manage = (props: Props) => {
   return (
-    <div className="bg-white w-full min-h-screen flex flex-col items-center justify-start md:px-60 px-5">
-      <div className="flex md:flex-row flex-col justify-between w-full pb-12 pt-8 gap-4">
-        <div className="flex md:flex-col flex-row items-start justify-between md:gap-2 gap-4">
+    <div className="bg-white w-full flex flex-col items-center justify-start md:px-60 px-5">
+      <div className="flex md:flex-row flex-col justify-center w-full pb-12 pt-8 gap-4 md:gap-52 shrink-0">
+        <div className="flex md:flex-col flex-row items-start justify-between shrink-0 md:gap-2 gap-4">
           <p className="text-textgray md:text-xl hidden md:block">
             It&apos;s better than your bank!
           </p>
@@ -52,7 +52,7 @@ const Manage = (props: Props) => {
         </div>
       </div>
       <Separator className="hidden md:block" />
-      <div className="flex md:flex-row flex-col justify-start gap-4 py-6">
+      <div className="flex md:flex-row flex-col justify-between gap-4 shrink-0 py-6">
         <Image
           src="https://github.com/ArrangeDev/lulo-landing/assets/93305952/4ca2fc8e-3687-457f-9ab2-439b073a6f71"
           alt="lulo phone"
@@ -61,11 +61,15 @@ const Manage = (props: Props) => {
           className="pr-[40px] shrink-0 max-w-full h-auto"
           style={{ objectFit: "contain" }}
         />
-        <div className="flex flex-col gap-4">
-          <h2 className="font-overused pt-5 text-5xl md:pr-8">The one place to manage your DeFi</h2>
-          <p className="font-overused text-textgray md:pr-36 pr-4 md:text-lg text-xl">
-            Lulo is the new way of earning interest from multiple providers automatically.
-          </p>
+        <div className="flex flex-col gap-8">
+          <div className="flex flex-col gap-4">
+            <h2 className="font-overused pt-5 text-5xl md:pr-8">
+              The one place to manage your DeFi
+            </h2>
+            <p className="font-overused text-textgray md:pr-36 pr-4 md:text-lg text-xl">
+              Lulo is the new way of earning interest from multiple providers automatically.
+            </p>
+          </div>
           <Timeline
             sx={{
               [`& .${timelineItemClasses.root}:before`]: {
@@ -73,11 +77,12 @@ const Manage = (props: Props) => {
                 padding: 0,
               },
             }}
+            className="md:-ml-4"
           >
             <TimelineItem>
               <TimelineSeparator>
                 <TimelineDot className="bg-emerald" />
-                <TimelineConnector />
+                <TimelineConnector className="md:h-[75px]" />
               </TimelineSeparator>
               <TimelineContent className="text-lg">
                 <p className="font-medium">Connect your wallet</p>
@@ -87,7 +92,7 @@ const Manage = (props: Props) => {
             <TimelineItem>
               <TimelineSeparator>
                 <TimelineDot className="bg-emerald" />
-                <TimelineConnector />
+                <TimelineConnector className="md:h-[75px]" />
               </TimelineSeparator>
               <TimelineContent className="text-lg">
                 <p className="font-medium">Create a deposit</p>
