@@ -17,7 +17,7 @@ const Manage = (props: Props) => {
   return (
     <div className="bg-white w-full flex flex-col items-center justify-start md:px-60 px-5">
       <div className="flex md:flex-row flex-col justify-center w-full pb-12 pt-8 gap-4 md:gap-52 shrink-0">
-        <div className="flex md:flex-col flex-row items-start justify-between shrink-0 md:gap-2 gap-4">
+        <div className="flex md:flex-col flex-row items-start md:justify-between justify-center shrink-0 md:gap-2 gap-12">
           <p className="text-textgray md:text-xl hidden md:block">
             It&apos;s better than your bank!
           </p>
@@ -52,13 +52,13 @@ const Manage = (props: Props) => {
         </div>
       </div>
       <Separator className="hidden md:block" />
-      <div className="flex md:flex-row flex-col justify-between gap-4 shrink-0 py-6">
+      <div className="flex md:flex-row flex-col justify-between items-center gap-4 shrink-0 py-6">
         <Image
           src="https://github.com/ArrangeDev/lulo-landing/assets/93305952/4ca2fc8e-3687-457f-9ab2-439b073a6f71"
           alt="lulo phone"
           height={500}
           width={380}
-          className="pr-[40px] shrink-0 max-w-full h-auto"
+          className="pr-[40px] shrink-0 max-w-full h-auto "
           style={{ objectFit: "contain" }}
         />
         <div className="flex flex-col gap-8">
