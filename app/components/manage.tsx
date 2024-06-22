@@ -16,7 +16,7 @@ type Props = {};
 const Manage = (props: Props) => {
   return (
     <div className="bg-white w-full flex flex-col items-center justify-start md:px-60 px-5">
-      <div className="flex md:flex-row flex-col justify-center w-full pb-12 pt-8 gap-4 md:gap-52 shrink-0">
+      <div className="flex md:flex-row flex-col justify-center items-center w-full pb-12 pt-8 gap-4 md:gap-52 shrink-0">
         <div className="flex md:flex-col flex-row items-start md:justify-between justify-center shrink-0 md:gap-2 gap-12">
           <p className="text-textgray md:text-xl hidden md:block">
             It&apos;s better than your bank!
@@ -52,7 +52,7 @@ const Manage = (props: Props) => {
         </div>
       </div>
       <Separator className="hidden md:block" />
-      <div className="flex md:flex-row flex-col justify-between items-center gap-4 shrink-0 py-6">
+      <div className="flex md:flex-row flex-col w-full shrink-0 justify-center items-center px-2 gap-4 py-6">
         <Image
           src="https://github.com/ArrangeDev/lulo-landing/assets/93305952/4ca2fc8e-3687-457f-9ab2-439b073a6f71"
           alt="lulo phone"
@@ -66,7 +66,7 @@ const Manage = (props: Props) => {
             <h2 className="font-overused pt-5 text-5xl md:pr-8">
               The one place to manage your DeFi
             </h2>
-            <p className="font-overused text-textgray md:pr-36 pr-4 md:text-lg text-xl">
+            <p className="font-overused text-textgray text-justify md:text-left md:pr-36 pr-4 md:text-lg text-xl">
               Lulo is the new way of earning interest from multiple providers automatically.
             </p>
           </div>

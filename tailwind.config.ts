@@ -14,7 +14,7 @@ const config = {
       sm: "640px",
       // => @media (min-width: 640px) { ... }
       xmd: "730px",
-      md: "840px",
+      md: "860px",
       // => @media (min-width: 768px) { ... }
 
       lg: "1024px",

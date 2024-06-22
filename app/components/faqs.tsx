@@ -19,7 +19,7 @@ const Faqs = (props: Props) => {
       <Separator />
       <h1 className="text-overused font-medium text-3xl">Frequently Asked</h1>
       <div className="pb-2 w-full md:w-[650px]">
-        <Accordion type="single" collapsible className="w-full">
+        <Accordion type="single" collapsible className="w-full ">
           <AccordionItem value="item-1">
             <AccordionTrigger>How much money do I need to start?</AccordionTrigger>
             <AccordionContent>
