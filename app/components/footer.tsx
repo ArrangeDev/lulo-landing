@@ -42,7 +42,7 @@ const Footer = (props: Props) => {
             </Link>
           </div>
         </div>
-        <div className="md:flex md:flex-row grid grid-cols-2 md:justify-center md:gap-20">
+        <div className="md:flex md:flex-row grid grid-cols-2 md:justify-center md:gap-16">
           <div className="flex flex-col gap-2 text-[#6B7280]">
             <p className="font-bold pb-3 text-[#111827]">Get Started</p>
             <Link href="/">Documentation</Link>

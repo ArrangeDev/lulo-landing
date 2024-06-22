@@ -32,7 +32,7 @@ const Wall = (props: Props) => {
       <div className="flex flex-col items-center justify-center w-full h-full gap-3 md:px-12 pt-2">
         <p className="font-overused text-textgray">BACKED BY</p>
         <div
-          className="md:flex md:flex-row md:items-center md:justify-around md:gap-12
+          className="md:flex md:flex-row md:items-center md:justify-center md:gap-12
                 grid grid-cols-2 gap-6 
         "
         >

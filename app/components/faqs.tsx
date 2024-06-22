@@ -52,7 +52,7 @@ const Faqs = (props: Props) => {
           </AccordionItem>
         </Accordion>
       </div>
-      <div className="bg-[#0C4434] relative overflow-hidden mx-2 text-white rounded-xl p-4 flex flex-col items-center justify-center gap-4 md:w-[884px]">
+      <div className="bg-[#0C4434] relative overflow-hidden mx-2 text-white rounded-xl p-4 px-6 flex flex-col items-center justify-center gap-4 md:w-[800px]">
         <h1 className="pointer-events-none font-overused text-4xl pt-16 z-10">Get Started Now</h1>
         <p className="text-sm px-16 z-10 hidden md:block">
           Lulo helps you automate the painful process of manually <br /> switching providers to

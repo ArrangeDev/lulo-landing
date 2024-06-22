@@ -36,7 +36,7 @@ const Manage = (props: Props) => {
             />
           </Link>
         </div>
-        <div className="flex flex-row items-center justify-around md:gap-8 gap-8 font-overused pt-8 md:pt-0 text-textgray">
+        <div className="flex flex-row items-center justify-center md:gap-8 gap-8 font-overused pt-8 md:pt-0 text-textgray">
           <div className="">
             <FlipText className="md:text-5xl shrink text-4xl text-emerald" word="12.3%" />
             <p>Average APY</p>
@@ -57,8 +57,9 @@ const Manage = (props: Props) => {
           src="https://github.com/ArrangeDev/lulo-landing/assets/93305952/4ca2fc8e-3687-457f-9ab2-439b073a6f71"
           alt="lulo phone"
           height={500}
-          width={500}
-          className="pr-[40px]"
+          width={380}
+          className="pr-[40px] shrink-0 max-w-full h-auto"
+          style={{ objectFit: "contain" }}
         />
         <div className="flex flex-col gap-4">
           <h2 className="font-overused pt-5 text-5xl md:pr-8">The one place to manage your DeFi</h2>
