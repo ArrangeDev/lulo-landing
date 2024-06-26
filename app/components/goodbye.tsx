@@ -43,7 +43,7 @@ const Goodbye = (props: Props) => {
           </RadixSlider.Root>
         </div>
       </div>
-      <div className="flex flex-col items-center justify-start gap-4 bg-lime-200 bg-upward-offset p-8 rounded-xl">
+      <div className="flex flex-col items-center justify-start gap-4 bg-lime-200 bg-upward-offset md:p-8 p-4 rounded-xl">
         <div className="flex md:flex-row flex-col bg-white p-4 rounded-xl items-center gap-4 shrink-0">
           <div className="flex flex-col gap-2 px-4 md:items-start items-center">
             <p className="text-2xl font-semibold">${luloInterest(deposit).roundedTotalAmount}</p>
