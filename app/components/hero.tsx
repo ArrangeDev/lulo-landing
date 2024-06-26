@@ -25,12 +25,10 @@ const Hero = (props: Props) => {
           words="Your new DeFi Savings Account"
         />
 
-        <p className="text-textgray md:text-xl text-lg font-overused text-center md:px-24 hidden md:block">
+        <p className="text-textgray md:text-xl text-lg font-overused text-center md:px-24 ">
           Lulo is the new way of earning interest from <br /> multiple providers automatically.
         </p>
-        <p className="text-textgray md:text-xl text-lg font-overused text-center md:px-24 md:hidden">
-          Lulo is the new way of earning interest from multiple providers automatically.
-        </p>
+
         <div className="flex md:flex-row flex-col items-center justify-between md:gap-6 md:pt-2">
           <LinkPreview url="https://lulo.fi">
             <Link

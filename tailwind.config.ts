@@ -111,6 +111,9 @@ const config = {
         "accordion-up": "accordion-up 0.2s ease-out",
         grid: "grid 15s linear infinite",
       },
+      backgroundPosition: {
+        "upward-offset": "center top -20px", // Adjust the value as needed
+      },
     },
   },
   plugins: [require("tailwindcss-animate"), require("daisyui")],
